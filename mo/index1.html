@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한솔제지</title>
+  <style>
+    *{margin:0;border:none;padding:0;box-sizing:border-box;}
+    .clearfix::after{content:'';display:block;clear:both;}
+    a{text-decoration:none;color:#333;}
+    ul,ol,li{list-style:none;}
+    h1,h2,h3,h4,h5,h6,p,div,span,ul,ol,li,a,label,option{font-weight:400;font-size:14px;color:#333;vertical-align:baseline;}
+    img{vertical-align:bottom;}
+
+    /* 1280이상 pc버전*/
+    .wrap{width:93.75%;max-width:1200px;margin:0 auto;}
+    .header{border-top:2px solid blue;padding:20px 0;position: relative;background:red;}
+    .mo_header{display:none;padding:0 10px;}
+    .mo_header>li:first-child{float:left;}
+    .mo_header>li:last-child{float:right;}
+    .mo_logo>div{float:left;}
+    .tgl_btn{width:20px;}
+    .tgl_btn span{display:block;height:2px;margin-bottom:7px;background:#333;}
+    .tgl_btn span:last-child{margin-bottom:0;}
+    .main_logo{position:absolute;left:10px;top:30px;}
+    .main_logo_top>div{float:left;}
+    .point{margin-right:8px;}
+    .point::before,.point::after{content:'';display:block;width:8px;height:8px;}
+    .point::before{background:blue;margin-bottom:8px;}
+    .point::after{background:green;}
+    h1{margin-top:-14px;font-size:2.6em;font-weight:900;color:#666;}
+    .main_logo_bottom{text-align:right;}
+    .navigation>nav>ul{float:right;}
+    nav>ul>li{float:left;}
+    nav:first-child{margin-bottom:20px;}
+    nav:first-child>ul>li::before{content:'';display:inline-block;width:1px;height:10px;margin:0 20px;background:#333;}
+    nav:first-child>ul>li:first-child::before{display:none;}
+    nav>ul>li:last-child{margin-right:10px;}
+    nav:last-child li{margin-left:30px;}
+    nav:last-child a{font-size:1.5em;font-weight:900;}
+
+    /* 1279이하 테블릿버전*/
+    @media (max-width:1279px){
+    }
+
+    /* 860이하 */
+    @media (max-width:860px){
+      .header{padding:5px 0 14px;}
+      .main_logo{left:10px;top:14px;}
+      .main_logo_bottom{display:none;}
+      nav:first-child{display:none;}
+      nav:last-child{margin-top:10px;}
+      nav:last-child li{margin-left:20px;}
+      nav:last-child a{font-size:1.3em;}
+    }
+    /* 760이하 */
+    @media (max-width:760px){
+      .pc_header{display:none;}
+      .mo_header{display:block;}
+      .header{padding: 16px 0 6px;}
+    }
+
+
+    /* 640이하 모바일버전 */
+    @media (max-width:640px){
+      .wrap{width:100%;}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <ul class="mo_header clearfix">
+        <li class="mo_logo clearfix">
+          <div class="point"></div>
+          <div><h1>Hansol</h1></div>
+        </li>
+        <li class="tgl_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
+      </ul>
+      <ul class="pc_header">
+        <li class="main_logo">
+          <ul>
+            <li class="main_logo_top clearfix">
+              <div class="point"></div>
+              <div><h1>Hansol</h1></div>
+            </li>
+            <li class="main_logo_bottom">
+              한솔제지
+            </li>
+          </ul>
+        </li>
+        <li class="navigation">
+          <nav class="clearfix">
+            <ul class="sub_nav clearfix">
+              <li><a href="#">홈</a></li>
+              <li><a href="#">사이트맵</a></li>
+              <li><a href="#">언어</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+          </nav>
+          <nav class="clearfix">
+            <ul class="nav clearfix">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">사업영역</a></li>
+              <li><a href="#">지속가능경영</a></li>
+              <li><a href="#">투자정보</a></li>
+              <li><a href="#">고객지원</a></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </header>
+    <!-- <section class="main_banner"></section> -->
+    <!-- <section class="quick_nav"></section> -->
+    <!-- <section class="papers"></section> -->
+    <!-- <section class="notice"></section> -->
+    <!-- <footer class="footer"></footer> -->
+  </div>
+</body>
+</html>
